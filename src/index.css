@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bg: #F0F2F5;
+  --color-ink: #1A1C1E;
+  --color-accent: #FF250C;
+  --color-danger: #DC2626;
+  --color-success: #16A34A;
+  --color-warning: #EA580C;
+  --color-border: #D1D5DB;
+  --font-sans: 'Inter', -apple-system, sans-serif;
+  --font-mono: 'SFMono-Regular', Consolas, monospace;
+}
+
+@layer base {
+  body {
+    @apply bg-[family-name:var(--font-sans)] bg-bg text-ink;
+  }
+}
